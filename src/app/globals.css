@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Midnight Theme (Default) */
+:root {
+  --color-bg: #0a0e27;
+  --color-bg-secondary: #141829;
+  --color-bg-tertiary: #1a1f3a;
+  --color-border: #2a2f4a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #6366f1;
+  --color-accent-light: #818cf8;
+  --color-glass-bg: rgba(20, 24, 41, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Forest Theme */
+[data-theme="forest"] {
+  --color-bg: #0f2818;
+  --color-bg-secondary: #142d1f;
+  --color-bg-tertiary: #1a3a28;
+  --color-border: #2a4a38;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #10b981;
+  --color-accent-light: #34d399;
+  --color-glass-bg: rgba(20, 45, 31, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Ocean Theme */
+[data-theme="ocean"] {
+  --color-bg: #0c1929;
+  --color-bg-secondary: #142a3d;
+  --color-bg-tertiary: #1a3a52;
+  --color-border: #2a4a6a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #0ea5e9;
+  --color-accent-light: #38bdf8;
+  --color-glass-bg: rgba(20, 42, 61, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Monochrome Theme */
+[data-theme="monochrome"] {
+  --color-bg: #0f0f0f;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-tertiary: #252525;
+  --color-border: #3a3a3a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #d1d5db;
+  --color-accent-light: #f3f4f6;
+  --color-glass-bg: rgba(26, 26, 26, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Crimson Theme */
+[data-theme="crimson"] {
+  --color-bg: #2a0a0f;
+  --color-bg-secondary: #3a1419;
+  --color-bg-tertiary: #4a1a24;
+  --color-border: #6a2a34;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #dc2626;
+  --color-accent-light: #ef4444;
+  --color-glass-bg: rgba(58, 20, 25, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Volcano Theme */
+[data-theme="volcano"] {
+  --color-bg: #2a1409;
+  --color-bg-secondary: #3a1f12;
+  --color-bg-tertiary: #4a2a1a;
+  --color-border: #6a3a2a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #ea580c;
+  --color-accent-light: #f97316;
+  --color-glass-bg: rgba(58, 31, 18, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Lavender Theme */
+[data-theme="lavender"] {
+  --color-bg: #1f0a2e;
+  --color-bg-secondary: #2a1439;
+  --color-bg-tertiary: #351f4a;
+  --color-border: #4a2a6a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #a855f7;
+  --color-accent-light: #d946ef;
+  --color-glass-bg: rgba(42, 20, 57, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Emerald Theme */
+[data-theme="emerald"] {
+  --color-bg: #0a2a1f;
+  --color-bg-secondary: #143a2a;
+  --color-bg-tertiary: #1a4a35;
+  --color-border: #2a6a4a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #059669;
+  --color-accent-light: #10b981;
+  --color-glass-bg: rgba(20, 58, 42, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Abyss Theme */
+[data-theme="abyss"] {
+  --color-bg: #020817;
+  --color-bg-secondary: #0a1028;
+  --color-bg-tertiary: #111839;
+  --color-border: #1a2850;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #3b82f6;
+  --color-accent-light: #60a5fa;
+  --color-glass-bg: rgba(10, 16, 40, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Frost Theme */
+[data-theme="frost"] {
+  --color-bg: #0f1419;
+  --color-bg-secondary: #1a2433;
+  --color-bg-tertiary: #253347;
+  --color-border: #3a5366;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #06b6d4;
+  --color-accent-light: #22d3ee;
+  --color-glass-bg: rgba(26, 36, 51, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Cloud Theme */
+[data-theme="cloud"] {
+  --color-bg: #1a1f2e;
+  --color-bg-secondary: #252d3d;
+  --color-bg-tertiary: #303a4d;
+  --color-border: #4a5a6d;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #64748b;
+  --color-accent-light: #94a3b8;
+  --color-glass-bg: rgba(37, 45, 61, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Paper Theme */
+[data-theme="paper"] {
+  --color-bg: #fafaf8;
+  --color-bg-secondary: #f5f5f3;
+  --color-bg-tertiary: #efefed;
+  --color-border: #e5e5e3;
+  --color-text: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-accent: #1f2937;
+  --color-accent-light: #374151;
+  --color-glass-bg: rgba(245, 245, 243, 0.6);
+  --color-glass-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Sand Theme */
+[data-theme="sand"] {
+  --color-bg: #2a2416;
+  --color-bg-secondary: #3a3220;
+  --color-bg-tertiary: #4a422a;
+  --color-border: #6a5a3a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #d4a574;
+  --color-accent-light: #e8b896;
+  --color-glass-bg: rgba(58, 50, 32, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Pearl Theme */
+[data-theme="pearl"] {
+  --color-bg: #1a1a1f;
+  --color-bg-secondary: #252530;
+  --color-bg-tertiary: #303040;
+  --color-border: #4a4a60;
+  --color-text: #f5f5f7;
+  --color-text-secondary: #b0b0b8;
+  --color-accent: #e8e8f0;
+  --color-accent-light: #f5f5fd;
+  --color-glass-bg: rgba(37, 37, 48, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.15);
+}
+
+/* Sky Theme */
+[data-theme="sky"] {
+  --color-bg: #0f1b2e;
+  --color-bg-secondary: #1a2a42;
+  --color-bg-tertiary: #253a56;
+  --color-border: #3a5a7a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #0284c7;
+  --color-accent-light: #0ea5e9;
+  --color-glass-bg: rgba(26, 42, 66, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Mint Theme */
+[data-theme="mint"] {
+  --color-bg: #0a2a24;
+  --color-bg-secondary: #143a32;
+  --color-bg-tertiary: #1a4a42;
+  --color-border: #2a6a5a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #14b8a6;
+  --color-accent-light: #2dd4bf;
+  --color-glass-bg: rgba(20, 58, 50, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Rose Theme */
+[data-theme="rose"] {
+  --color-bg: #2a0a1a;
+  --color-bg-secondary: #3a1429;
+  --color-bg-tertiary: #4a1a39;
+  --color-border: #6a2a59;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #e11d48;
+  --color-accent-light: #f43f5e;
+  --color-glass-bg: rgba(58, 20, 41, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Aurora Theme */
+[data-theme="aurora"] {
+  --color-bg: #1a0a2a;
+  --color-bg-secondary: #2a1439;
+  --color-bg-tertiary: #3a1f4a;
+  --color-border: #5a2a6a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #8b5cf6;
+  --color-accent-light: #a78bfa;
+  --color-glass-bg: rgba(42, 20, 57, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Nebula Theme */
+[data-theme="nebula"] {
+  --color-bg: #0f0a1f;
+  --color-bg-secondary: #1a1439;
+  --color-bg-tertiary: #251f4a;
+  --color-border: #3a2a6a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+  --color-glass-bg: rgba(26, 20, 57, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Prism Theme */
+[data-theme="prism"] {
+  --color-bg: #1a0a2a;
+  --color-bg-secondary: #2a1a3a;
+  --color-bg-tertiary: #3a2a4a;
+  --color-border: #5a4a6a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #ec4899;
+  --color-accent-light: #f472b6;
+  --color-glass-bg: rgba(42, 26, 58, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Obsidian Theme */
+[data-theme="obsidian"] {
+  --color-bg: #0a0a0f;
+  --color-bg-secondary: #141419;
+  --color-bg-tertiary: #1f1f2a;
+  --color-border: #2a2a3a;
+  --color-text: #e5e7eb;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #6366f1;
+  --color-accent-light: #818cf8;
+  --color-glass-bg: rgba(20, 20, 25, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-light);
+}
+
+/* Glass morphism utility */
+.glass {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-glass-border);
+}
+
+.glass-sm {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-glass-border);
+}
+
+/* Text utilities */
+.text-primary {
+  color: var(--color-text);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Background utilities */
+.bg-primary {
+  background-color: var(--color-bg);
+}
+
+.bg-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--color-bg-tertiary);
+}
+
+/* Border utilities */
+.border-primary {
+  border-color: var(--color-border);
+}
+
+/* Smooth transitions */
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
